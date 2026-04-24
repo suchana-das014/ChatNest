@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Chatroom</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <h3>💬 ChatNest</h3>
+            </div>
+
+            <div class="user-info">
+                <input id="nickname" placeholder="Enter nickname">
+                <button id="joinBtn">Join</button>
+            </div>
+
+            <div class="users-bar">
+                <p>Users</p>
+                <div id="user-list"></div>
+            </div>
+        </div>
+
+        <!-- Chat Area -->
+        <div class="chat">
+            <div class="chat-header">
+                <h3>Chat Room</h3>
+            </div>
+
+            <div id="messages" class="messages"></div>
+
+            <div id="chat-area" class="input-area" style="display:none;">
+                <input id="message" placeholder="Type message">
+                <button id="sendBtn">Send</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.socket.io/4.0.1/socket.io.min.js"></script>
+    <script src="/static/script.js"></script>
+
+</body>
+
+</html>

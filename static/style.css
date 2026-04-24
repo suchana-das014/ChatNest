@@ -1,0 +1,195 @@
+body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background: #ece5dd;
+}
+
+.app {
+    display: flex;
+    height: 100vh;
+}
+
+
+/* Sidebar */
+
+.sidebar {
+    width: 30%;
+    background: #111b21;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-header {
+    background: #202c33;
+    padding: 15px;
+}
+
+.user-info {
+    padding: 10px;
+    background: #2a3942;
+}
+
+
+/* Chat */
+
+.chat {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-header {
+    background: #202c33;
+    color: white;
+    padding: 15px;
+}
+
+
+/* Messages */
+
+.messages {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Message bubbles */
+
+.message {
+    max-width: 60%;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    word-wrap: break-word;
+}
+
+.left {
+    background: white;
+    align-self: flex-start;
+}
+
+.right {
+    background: #dcf8c6;
+    align-self: flex-end;
+}
+
+
+/* Users switch area */
+
+.users-bar {
+    background: #111b21;
+    color: white;
+    padding: 10px;
+    flex: 1;
+    overflow-y: auto;
+}
+
+.users-bar input {
+    width: 70%;
+    padding: 6px;
+    border-radius: 10px;
+    border: none;
+}
+
+.users-bar button {
+    padding: 6px 10px;
+    margin-left: 5px;
+    border: none;
+    border-radius: 10px;
+    background: #25d366;
+    color: white;
+}
+
+
+/* nickname buttons */
+
+.nick {
+    display: block;
+    background: #2a3942;
+    margin-top: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.nick.active {
+    background: #25d366;
+}
+
+
+/* Input */
+
+.input-area {
+    display: flex;
+    padding: 10px;
+    background: #202c33;
+}
+
+.input-area input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+}
+
+.input-area button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    background: #25d366;
+    border: none;
+    color: white;
+    border-radius: 20px;
+}
+
+.user-info input {
+    width: 70%;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+}
+
+.user-info button {
+    margin-left: 5px;
+    padding: 10px 15px;
+    background: #25d366;
+    border: none;
+    color: white;
+    border-radius: 20px;
+}
+
+.message {
+    max-width: 70%;
+    word-wrap: break-word;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+    white-space: pre-wrap;
+}
+
+.message strong {
+    display: block;
+    font-size: 15px;
+    font-weight: 600;
+    color: #075e54;
+    background: transparent !important;
+    padding: 0 !important;
+    margin: 0 0 3px 0;
+}
+
+.message em {
+    font-size: 12px;
+    color: gray;
+}
+
+.left {
+    background: #ffffff;
+    align-self: flex-start;
+}
+
+.right {
+    background: #d4f8c4;
+    align-self: flex-end;
+}
